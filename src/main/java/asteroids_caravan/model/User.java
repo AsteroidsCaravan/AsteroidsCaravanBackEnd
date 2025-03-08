@@ -1,8 +1,8 @@
 package asteroids_caravan.model;
 
+import java.util.Date;
+
 public class User {
-    //IMPLEMENTAR ATRIBUTOS
-    //IMPLEMENTAR GETTERS E SETTERS
 
     private int idUser;
     private String name;

@@ -1,23 +1,24 @@
 package asteroids_caravan.model;
 
+import java.time.LocalDate;
+
 public class SearchHistory {
-    //IMPLEMENTAR ATRIBUTOS
-    //IMPLEMENTAR GETTERS E SETTERS
 
     private int idSearchHistory;
-    private DateTime surveyDay;
-    
+    private LocalDate surveyDay;
+
     public int getIdSearchHistory() {
         return idSearchHistory;
     }
     public void setIdSearchHistory(int idSearchHistory) {
         this.idSearchHistory = idSearchHistory;
     }
-    public DateTime getSurveyDay() {
+    public LocalDate getSurveyDay() {
         return surveyDay;
     }
-    public void setSurveyDay(DateTime surveyDay) {
+    public void setSurveyDay(LocalDate surveyDay) {
         this.surveyDay = surveyDay;
     }
+    
 
 }
