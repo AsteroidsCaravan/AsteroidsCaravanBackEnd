@@ -23,4 +23,14 @@ public class SearchHistoryController {
         System.out.println("Histórico registrado " + history);
         return ResponseEntity.status(201).body(history);
     }
+
+    @GetMapping("/history/{id}")
+    public ResponseEntity<SearchHistory> getUniqueCategory(@PathVariable Long id){
+        var history = searchHistory.stream().filter( hist -> hist.getId().equals(id))
+                .findFirst();
+        System.out.println("Buscando histórico " + id);
+        if(history.isEmpty())
+            return ResponseEntity.notFound().build();
+        return ResponseEntity.ok(history.get());
+    }
 }
