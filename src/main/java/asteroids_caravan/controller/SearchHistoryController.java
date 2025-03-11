@@ -26,7 +26,7 @@ public class SearchHistoryController {
 
     @GetMapping("/history/{id}")
     public ResponseEntity<SearchHistory> getUniqueCategory(@PathVariable Long id){
-        var history = searchHistory.stream().filter( hist -> hist.getId().equals(id))
+        var history = searchHistory.stream().filter( hist -> hist.getIdSearchHistory().equals(id))
                 .findFirst();
         System.out.println("Buscando histórico " + id);
         if(history.isEmpty())

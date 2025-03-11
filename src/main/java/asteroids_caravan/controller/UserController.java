@@ -26,8 +26,8 @@ public class UserController {
     }
 
     @GetMapping("/user/{id}")
-    public ResponseEntity<SearchHistory> getUniqueCategory(@PathVariable Long id){
-        var userFiltred = userInfo.stream().filter( user -> user.getId().equals(id))
+    public ResponseEntity<User> getUniqueCategory(@PathVariable Long id){
+        var userFiltred = userInfo.stream().filter( user -> user.getIdUser().equals(id))
                 .findFirst();
         System.out.println("Buscando usuário " + id);
         if(userFiltred.isEmpty())

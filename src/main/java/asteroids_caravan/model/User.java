@@ -4,17 +4,17 @@ import java.util.Date;
 
 public class User {
 
-    private int idUser;
+    private Long idUser;
     private String name;
     private String LastName;
     private Date birthday;
     private String email;
     private String password;
     
-    public int getIdUser() {
+    public Long getIdUser() {
         return idUser;
     }
-    public void setIdUser(int idUser) {
+    public void setIdUser(Long idUser) {
         this.idUser = idUser;
     }
     public String getName() {

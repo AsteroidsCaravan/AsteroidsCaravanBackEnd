@@ -4,13 +4,13 @@ import java.time.LocalDate;
 
 public class SearchHistory {
 
-    private int idSearchHistory;
+    private Long idSearchHistory;
     private LocalDate surveyDay;
 
-    public int getIdSearchHistory() {
+    public Long getIdSearchHistory() {
         return idSearchHistory;
     }
-    public void setIdSearchHistory(int idSearchHistory) {
+    public void setIdSearchHistory(Long idSearchHistory) {
         this.idSearchHistory = idSearchHistory;
     }
     public LocalDate getSurveyDay() {
